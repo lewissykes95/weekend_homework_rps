@@ -1,13 +1,21 @@
 {% block content %}
 
-<h1>Rock, Paper Scissors Game</h1>
+<h1>Rock, Paper, Scissors Game</h1>
 
-<div class="wrapper">
-    <div class="player-list">
-        {{result}}
-        
-    </div> 
-    
+<div class="player-list">
+    <ul>
+        <li id="player1">
+        {% for player in players %}
+            <br>
+            {{ player.name }}: <b>{{ player.choice }}</b> 
+            <br> 
+        </li>
+        {% endfor %}
+
+        {{ result }}
+    </ul>
+
+
 {% endblock  %}
 
 
