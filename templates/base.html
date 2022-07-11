@@ -11,14 +11,22 @@
 
 <body>
     <h1>Rock, Paper, Scissors</h1>
-    <nav class="players">
-     <ul>
-        <li><a href="/rules">Game Rules</a></li>
-         <li><a href="/play">Play Against Computer</a></li>
-         </ul>
-    </nav>
-     <h1>Welcome to our game of Rock, Paper, Scissors</h1>
-          {% block content %} {% endblock %}
+    <div class="game">
+        <div class="box">
+            <nav class="players">
+                <h1>Welcome to our game of Rock, Paper, Scissors</h1>
+                <ul>
+                   <li><a href="/rules">Game Rules</a></li>
+                    <li><a href="/play">Play Against Computer</a></li>
+                    </ul>
+               </nav>
+                
+                     {% block content %} {% endblock %}
+        </div>
+        
+
+    </div>
+
 </body>
       
 
