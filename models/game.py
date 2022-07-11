@@ -10,10 +10,12 @@ class Game:
     def check_winner(self):
         if player_1.choice == "Rock" and player_2.choice == "Scissors":
             return "Player 1 Wins"
-        elif player_1.choice == "Scissors" and player_2.choice == "Rock":
+        elif player_1 == "Scissors" and player_2.choice == "Rock":
             return "Player 2 Wins"
-        else: 
-            return None
+
+    
+
+
 
 
 

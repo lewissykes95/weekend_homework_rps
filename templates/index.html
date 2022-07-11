@@ -3,19 +3,15 @@
 <h1>Rock, Paper, Scissors Game</h1>
 
 <div class="player-list">
-    <ul>
-        <li id="player1">
+
         {% for player in players %}
             <br>
             {{ player.name }}: <b>{{ player.choice }}</b> 
-            <br> 
-        </li>
+            <br>
         {% endfor %}
 
         {{ result }}
-    </ul>
-
-
+</div>
 {% endblock  %}
 
 
